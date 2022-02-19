@@ -1,0 +1,8 @@
+name: CR
+version: '${project.version}'
+main: dev.bar.cr.Main
+api-version: 1.18
+commands:
+  punish:
+    aliases: p
+    usage: /p
