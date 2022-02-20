@@ -20,6 +20,12 @@ public class ListenerM implements Listener{
     }
 
     public void onJoin(PlayerJoinEvent e){
+
+
+
+
+
+
     }
 
 
@@ -34,15 +40,15 @@ public class ListenerM implements Listener{
 
     public  void playerVals(Player p, String args){
 
-        File punished = new File("plugins/cr", "punished.yml");
-        if (!punished.exists()) {
+        File punishedf = new File("plugins/cr", "punished.yml");
+        if (!punishedf.exists()) {
             try {
-                punished.createNewFile();
+                punishedf.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        FileConfiguration pun = YamlConfiguration.loadConfiguration(punished);
+        FileConfiguration pun = YamlConfiguration.loadConfiguration(punishedf);
 
         String name = p.getDisplayName();
         Location loc = p.getLocation();
